@@ -1,0 +1,17 @@
+{
+  "name": "presentations",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "slides/*"
+  ],
+  "scripts": {
+    "start": "PORT=1922 node yuml.js & yarn exec reveal-md --"
+  },
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "reveal-md": "3.0.4",
+    "yuml-diagram": "^1.1.0"
+  }
+}
